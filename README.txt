@@ -1,4 +1,4 @@
-README for the Song Search Assignment
+README for Song Seach
 
 COMPILE INSTRUCTIONS
 
