@@ -1,0 +1,19 @@
+Data Structures:
+Song
+•	Artist: a string
+•	Title: a string
+•	Lyrics: a vector of all the words in the songs (as strings
+WordContext
+•	Locations: vector of integers which hold the positions of the word in the lyrics vector in the song that the word is in
+•	Song: an integer which represents the index of the word’s song within its vector
+•	numOccurences: an integer which represents the number of times the word exists within the given song
+
+A vector  which stores Songs 
+A hashtable which holds words
+	Key: strings (words in the songs)
+	Value: vector of WordContext objects
+
+Finding a word – first, use the hashing function to find the location of the word. Then, loop through the vector of WordContext objects, which are stored in order of frequency. An inner loop goes through each occurrence of the word within the song, printing out the title and artist of the song, then using the location value within WordContext in order to find and print out the context.
+
+Inserting words – Done through the Song class. Word’s (WordContext and string of the word) are stored in a temporary hashtable by going through each word in the song, and either inserting a new Word or updating the data on an already present Word. Then, each Word is accessed and added to the main hashtable.
+
